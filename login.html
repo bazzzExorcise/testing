@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chat App</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+  <style>body{font-family: nunito;}</style>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body id="body">
+  <div class="w-full text-sm min-h-screen grid place-items-center">
+    <div class="max-w-xs items-center w-full flex flex-col">
+      <h1 class="font-bold text-xl">Login Form</h1>
+      <p class="">login using your account</p>
+      <div class="w-full flex-col flex gap-2 px-4 mt-4">
+        <div class="items-center px-3 flex overflow-hidden bg-gray-200 rounded-md">
+          <ion-icon name="person" class="text-gray-400 text-xl"></ion-icon>
+          <input type="text" id="username" name="username" placeholder="Username" class="w-full focus:outline-none py-2 px-3 bg-transparent">
+        </div>
+        <div class="items-center px-3 flex overflow-hidden bg-gray-200 rounded-md">
+          <ion-icon name="key" class="text-gray-400 text-xl"></ion-icon>
+          <input type="text" id="password" name="password" placeholder="Password" class="w-full focus:outline-none py-2 px-3 bg-transparent">
+        </div>
+        <div class="mt-3 flex gap-2 items-center justify-center">
+          <input type="checkbox" class="hidden" name="" id="open-password">
+          <label for="open-password" class="w-4 grid place-items-center overflow-hidden aspect-square border border-black rounded-sm">
+            <ion-icon name="checkmark" id="checkmark" class="opacity-0 duration-300"></ion-icon>
+          </label>
+          <label for="open-password" class="">Show Password</label>
+        </div> 
+        <button class="mt-3 text-white w-full bg-black rounded-md py-2 text-center">
+          Login
+        </button>
+        <p class="text-center">dont have an account? <a href="" class="reg font-smeibold underline">click here</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-full bg-black z-30 cp fixed bottom-0 left-0 duration-500"></div>
+  <script src="JS/login.js"> </script>
+</body>
+</html>
