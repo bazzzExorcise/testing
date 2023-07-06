@@ -40,7 +40,7 @@ $(document).ready(function () {
     // Periksa apakah elemen sentuhan terjadi di luar elemen website
     if (!container.is(event.target) && container.has(event.target).length === 0) {
       // Kode yang akan dijalankan ketika pengguna menyentuh bagian di luar elemen website
-      console.log('Pengguna menyentuh di luar elemen website.');
+      alert('Pengguna menyentuh di luar elemen website.');
     }
   });
 
